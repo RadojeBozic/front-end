@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Linkovi HTML</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<style type="text/css">
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			
+		}
+		li {
+			float: left
+		}
+		li a {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			margin: 5px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: #777;
+		}
+		.active {
+			background-color: red;
+		}
+		.wrapp {
+			width: 100%;
+			border: 2px dotted red;
+			margin: 10px;
+			padding: 5px;
+		}
+		span.a {
+			display: inline;     /*podrazumevano za raspon*/
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			border: 1px solid blue;
+			background-color: yellow;
+
+		} 
+		span.b {
+			display: inline-block;    
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			border: 1px solid blue;
+			background-color: yellow;
+
+		} 
+		span.c {
+			display: block;    
+			width: 100px;
+			height: 100px;
+			padding: 5px;
+			border: 1px solid blue;
+			background-color: yellow;
+
+		} 
+		.wrapp1 {
+			width: 90%;
+			height: 500px;
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="prva.html" class="active" target="blank" title="predji na prvu stranicu">Prva stranica</a></li>
+		<li><a href="#druga">Druga stranica</a></li>
+		<li><a href="#treca">Treca stranica</a></li>
+		<li><a href="#cetvrta">Cetvrta stranica</a></li>
+		<li><a href="#peta">Peta stranica</a></li>
+		<li><a href="#sesta">Sesta stranica</a></li>
+	</ul>
+	<!--U donjem primeru sa span tagom je pojasnjenje kako funkcionise CSS Layout - display(prikaz). prvi primer je na tagu span klase "a", vrednost display: inline-->
+	<div class="wrapp">
+		<h1>Linkovi</h1>
+	<h2>HTML veze - hiperveze & HTML veze su hiperveze.</h2>
+	<p>Hiperveze su neizostavne za kretanje <span class="a">izmedju</span> <span class="a">stranica</span>, a i unutar same stranice. Dobar primer je meni za navigaciju(vrh ove stranice)</p>
+
+<p>Možete kliknuti na vezu i preći na drugi dokument.
+
+Kada pređete mišem preko veze, strelica miša će se pretvoriti u malu ruku.</p>
+<a href="prva.html" target="blank" title="predji na prvu stranicu">Osnovna/prva stranica</a>
+</div>
+<div class="wrapp">
+		<h1>Linkovi</h1>
+	<h2>HTML veze - hiperveze & HTML veze su hiperveze.</h2>
+	<p>Hiperveze su neizostavne za kretanje <span class="b">izmedju</span> <span class="b">stranica</span>, a i unutar same stranice. Dobar primer je meni za navigaciju(vrh ove stranice)</p>
+
+<p>Možete kliknuti na vezu i preći na drugi dokument.
+
+Kada pređete mišem preko veze, strelica miša će se pretvoriti u malu ruku.</p>
+<a href="prva.html" target="blank" title="predji na prvu stranicu">Osnovna/prva stranica</a>
+</div>
+<div class="wrapp">
+		<h1>Linkovi</h1>
+	<h2>HTML veze - hiperveze & HTML veze su hiperveze.</h2>
+	<p>Hiperveze su neizostavne za kretanje <span class="c">izmedju</span> <span class="c">stranica</span>, a i unutar same stranice. Dobar primer je meni za navigaciju(vrh ove stranice)</p>
+
+<p>Možete kliknuti na vezu i preći na drugi dokument.
+
+Kada pređete mišem preko veze, strelica miša će se pretvoriti u malu ruku.</p>
+<a href="prva.html" target="blank" title="predji na prvu stranicu">Osnovna/prva stranica</a>
+</div>
+<div class="wrapp1">
+	<h1>Horizontalne veze za navigaciju</h1>
+<p>Podrazumevano, stavke liste se prikazuju vertikalno. U ovom primeru koristimo displai: inline-block da ih prikažemo horizontalno (uporedo).
+
+Napomena: Ako promenite veličinu prozora pregledača, linkovi će se automatski prekinuti kada postane previše gužva.</p>
+<ul class="nav">
+	<li><a href="#link">Link</a></li>
+	<li><a href="#link">Link</a></li>
+	<li><a href="#link">Link</a></li>
+	<li><a href="#link">Link</a></li>
+	<li><a href="#link">Link</a></li>
+</ul>
+	
+</div>
+
+
+	
+
+</body>
+</html>
