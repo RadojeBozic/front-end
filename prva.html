@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prva HTML</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			background-color: #999;
+		}
+		.header {
+			background-color: #2196F3;
+			color: white;
+			text-align: center;
+			padding: 15px;
+		}
+		.header h1:hover {
+			color: red;
+		}
+		.footer {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #444;
+
+		}
+		.footer li {
+			float: left;
+		}
+		.footer li a {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		.footer li a:hover {
+			background-color: #222;
+		}
+		.footer li a.active {
+			color: white;
+			background-color: #3CAF30;
+		} 
+		.topmenu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #777;
+		}
+		.topmenu li {
+			float: left;
+		}
+		.topmenu li a {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		.topmenu li a:hover {
+			background-color: #222;
+		}
+		.topmenu li a.active {
+			color: white;
+			background-color: #4CAF50;
+		}
+		.column {
+			float: left;
+			padding: 15px;
+		}
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.sidemenu {
+			width: 25%;
+		}
+		.content {
+			width: 75%;
+		}
+		.sidemenu ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.sidemenu li a {
+			margin-bottom: 4px;
+			display: block;
+			padding: 8px;
+			background-color: #eee;
+			text-decoration: none;
+			color: #666;
+		}
+		.sidemenu li a:hover {
+			background-color: #555;
+			color: white;
+		}
+		.sidemenu li a.active {
+			background-color: #008CBA;
+			color: white;
+		}
+		img {
+			float: right;
+			margin: 10px;
+		}
+		.deklaracija {
+			width: 100%;
+			border: 1px solid red;
+			margin: 10px;
+			padding: 15px;	
+		}
+		.osnova {
+			margin: 5px;
+			width: 100%;
+			border: 3px solid red;
+			padding: 10px;
+			border-radius: 15px;
+			text-align: center;
+			margin-top:;
+		}
+		
+	</style>
+</head>
+<body>
+	<ul class="topmenu">
+				<li><a href="https://www.w3schools.com/default.asp" class="active" target="_blank" title="W3Schools">W3Schools</a></li>
+				<li><a href="druga.html" target="_blank" title="druga str">Druga str.</a></li>
+				<li><a href="strana3">Strana 3</a></li>
+				<li><a href="strana4">Strana 4</a></li>
+				<li><a href="strana5">Strana 5</a></li>
+				<li><a href="strana6">Strana 6</a></li>
+				<li><a href="strana7">Strana 7</a></li>
+				<li><a href="strana8">Strana 8</a></li>
+				<li><a href="strana9">Strana 9</a></li>
+	</ul>
+	<div class="clearfix">
+		<div class="column sidemenu">
+			<ul>
+				<li><a href="#footer" class="active">Footer 1</a></li>
+				<li><a href="strana2">Strana 2</a></li>
+				<li><a href="strana3">Strana 3</a></li>
+				<li><a href="strana4">Strana 4</a></li>
+				<li><a href="strana5">Strana 5</a></li>
+				<li><a href="strana6">Strana 6</a></li>
+				<li><a href="strana7">Strana 7</a></li>
+				<li><a href="strana8">Strana 8</a></li>
+				<li><a href="strana9">Strana 9</a></li>
+			</ul>	
+		</div>
+	<div class="column content">
+		<div class="header">
+			<h1>HTML - Standardni jezik za označavanje web stranice</h1>
+		</div>
+		<img src="../slike/html_logo.png" alt="logo" title="html logo" width="200" height="200">
+		<div class="osnova">
+		<h2>OSNOVE:</h2>
+
+		<p>Pomoću HTML-a može se kreirati sopstvena web lokacija</p>
+		<h3>Šta je HTML?</h3>
+<p>
+	HTML je skraćenica od Hiper Tektst Markup Language,<br>
+HTML je standardni jezik za označavanje za kreiranje veb stranica,<br>
+HTML opisuje strukturu veb stranice,<br>
+HTML se sastoji od niza elemenata,<br>
+HTML elementi govore pretraživaču kako da prikaže sadržaj,<br>
+HTML elementi označavaju delove sadržaja kao što su „ovo je naslov“, „ovo je pasus“, „ovo je veza“ itd.</p><br>
+<hr></div>
+	</div>
+	</div>
+	<div class="deklaracija">
+		<h1>Deklaracija !DOCTYPE html</h1>
+	<p><img src="../slike/doctype.jpg" alt="doctype" title="doctype" width="300" height="300">
+		Deklaracija <strong>!DOCTYPE html</strong> definiše da je ovaj dokument HTML5 dokument,<br>
+Element html je osnovni element HTML stranice,<br>
+Element head sadrži meta informacije o HTML stranici,<br>
+Element title navodi naslov za HTML stranicu (koji je prikazan u naslovnoj traci pretraživača ili na kartici stranice),<br>
+Element bodi definiše telo dokumenta i predstavlja kontejner za sav vidljivi sadržaj, kao što su naslovi,<br> pasusi, slike, hiperveze, tabele, liste itd.,<br>
+Element h1 definiše veliki naslov,<br>
+Element p definiše pasus.</p>
+<h3>Šta je HTML element?</h3>
+<p>HTML element je definisan početnom oznakom, nekim sadržajem i završnom oznakom.</p>
+<h3>Veb pretraživači</h3>
+<p>Svrha veb pretraživača (Chrome, Edge, Firefox, Safari) je da čita HTML dokumente i da ih ispravno prikaže.<br>
+
+Pregledač ne prikazuje HTML oznake, ali ih koristi da odredi kako da prikaže dokument.</p>	
+<h3>HTML editori</h3>
+<p>HTML editori ili uredjivači služe za kreiranje i menjanje web stranica</p>
+<h1>HTML naslovi</h1>
+<p>Html naslovi su definisani oznakama od h1 do h6.</p>
+<h1>Ovo je naslov 1</h1>
+<h2>Ovo je naslov 2</h2>
+<h3>Ovo je naslov 3</h3>
+<h4>Ovo je naslov 4</h4>
+<h5>Ovo je naslov 5</h5>
+<h6>Ovo je naslov 6</h6>
+	</div>
+	<div class="deklaracija">
+		<h1>Svi HTML elementi mogu imati atribute</h1>
+<p>Href atribut a specificira URL stranice na koju link vodi,<br>
+Src atribut img određuje putanju do slike koja će biti prikazana,<br>
+Atributi širine i visine img pružaju informacije o veličini slika,<br>
+Atribut alt img obezbeđuje alternativni tekst za sliku,<br>
+Atribut style se koristi za dodavanje stilova elementu, kao što su boja, font, veličina i još mnogo toga,<br>
+Atribut lang oznake html deklariše jezik veb stranice,<br>
+Atribut title definiše neke dodatne informacije o elementu.</p>
+	</div>
+	<div>
+		<ul class="footer" id="footer">
+				<li><a href="linkovi.html" class="active" target="_blank" title="prdji na stranicu Linkovi">Linkovi</a></li>
+				<li><a href="strana2">Strana 2</a></li>
+				<li><a href="strana3">Strana 3</a></li>
+				<li><a href="strana4">Strana 4</a></li>
+				<li><a href="strana5">Strana 5</a></li>
+				<li><a href="strana6">Strana 6</a></li>
+				<li><a href="strana7">Strana 7</a></li>
+				<li><a href="strana8">Strana 8</a></li>
+				<li><a href="strana9">Strana 9</a></li>
+			</ul>
+		
+	</div>
+	
+
+</body>
+</html>
